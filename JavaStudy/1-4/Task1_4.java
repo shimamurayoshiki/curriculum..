@@ -1,14 +1,5 @@
-/**
- * Task1-4: 課題内容
- *
- * ログイン機能をイメージして処理を書いてみましょう！
- * ・アカウント情報として登録されている情報
- * 　名前：alice
- * 　パスワード：pass
- * 本課題では、すべての定数(合計６種類)を使いつつ、if文の使い方に慣れていきましょう！
- * 問① 〜 問⑤まで回答お願いします！
- *
- */
+
+
 public class Task1_4 {
 
   // 定数（アカウント情報）
@@ -35,18 +26,18 @@ public class Task1_4 {
        String pass = USER_PASSWORD;
 
       // ② 変数nameの値が「 alice 」、変数passの値が「 pass 」であった場合、「 ログイン成功です 」と出力してください。
-       if (name == USER_RNAME && pass == USER_PASSWORD){
+       if (pass.equals("name")){
          System.out.println(CONST_MSG_SUCCESS);
        }
 
       // ③ 変数nameの値のみ正しい場合、定数を使用して「 パスワードに誤りがあります。 」と出力してください。
-       else if (name == USER_RNAME ){
+       else if (name.equals("USER_RNAME")){
          System.out.println(CONST_MSG_ERROR_PASS);
        }
 
 
       // ④ 変数passの値のみ正しい場合、定数を使用して「 名前に誤りがあります。 」と出力してください。
-       else if (pass == USER_PASSWORD){
+       else if (pass.equals("USER_PASSWORD")){
          System.out.println(CONST_MSG_ERROR_NAME);
        }
 
